@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Rzut poziomy</title>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <style type="text/css">
+        ${demo.css}
+    </style>
+</head>
+<body>
+<script src="js/highcharts.js"></script>
+<script src="js/modules/exporting.js"></script>
+<h1>Rzut ukośny w jednorodnym polu grawitacyjnym (Monika Łapińska)</h1>
+<form>
+    <label> Kąt <input id="degrees" disabled  size="4" onchange="rerender()"></label>
+    <label> Prędkość początkowa <input id="v0" disabled size="4"></label>
+    <label> Przyśpieszenie <input id="g" disabled  size="4"></label>
+    <label> Próbkowanie <input id="tick" disabled  size="4"></label><br/>
+
+</form>
+<div id="trajectory" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+<div id="horizontalDistance" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+<div id="verticalDistance" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+<script type="text/javascript" src="calculations.js"></script>
+<script type="text/javascript" src="chart.js"></script>
+<script type="text/javascript" src="main.js"></script>
+</body>
+</html>
